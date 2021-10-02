@@ -10,4 +10,5 @@
 Как выглядит:
 
 1) http://i.piccy.info/i9/9714cb048570ad431ee6198b0987bbc3/1633185482/68811/1441523/Screenshot_2021_10_02_17_05_37_246_com_example_topappbarwithdriwerlayiutmenu.jpg
+
 2) http://i.piccy.info/i9/c0cb9f01f596183d32ec11ae214846b3/1633185498/43284/1441523/36499Screenshot_2021_10_02_17_05_16_198_com_example_topappbarwithdriwerlayiutmenu.jpg
