@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="longest">120 min</string>
+    <string name="shortest">90 min</string>
+    <string name="vindiesel">Vin Diesel</string>
+    <string name="ryangosling">Ryan Gosling</string>
+    <string name="jaredleto">Jared Leto</string>
+    <string name="olegyanchenko">Oleg Yanchenko</string>
+    <string name="riddick">RIDDICK</string>
+    <string name="mrnobody">MR.NOBODY</string>
+    <string name="goandwatch">GO AND WATCH</string>
+    <string name="bladerunner">BLADE RUNNER</string>
+</resources>

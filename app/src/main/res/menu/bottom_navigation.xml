@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--app:showAsAction="ifRoom" - Показывать иконку на баре, если есть еще место-->
+    <item
+        android:id="@+id/homeBottomNavigation"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/uploadBottomNavigation"
+        android:icon="@drawable/upload"
+        android:title="@string/upload"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/favoritesBottomNavigation"
+        android:icon="@drawable/favorites"
+        android:title="@string/favorites"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/settingsBottomNavigation"
+        android:icon="@drawable/settings"
+        android:title="@string/settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>

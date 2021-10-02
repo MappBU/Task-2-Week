@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Основной контейнер экрана -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <!--В этот контейнер помещаем TopAppBar и FrameLayout(Контент)-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--
+            CoordinatorLayout - Этот контейнер нужен для многих Баров в MD. В частности в TopAppBar
+            android:fitsSystemWindows="true" - Показывает TopAppBar поверх контента во FrameLayout
+            Потому что сам бар находится прямо на нашем FrameLayout, из за этого контент из Фрейма может залазить на TopAppBar (Не смещает его вниз)
+            android:layout_weight="13.1" стандартный вес для соотношения c FrameLayout
+            android:fitsSystemWindows="true" - в этом примере ненужен, так как вес указан пропорционально
+            -->
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/sectTopAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="11">
+
+                <!--Контейнер самого TopAppBar-->
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--
+                    Сам TopAppBar
+                    android:layout_height="?attr/actionBarSize" - стандартная высота ActionBar
+                    style="@style/Widget.MaterialComponents.Toolbar.Primary" - Стандартная тема для бара
+                    -->
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/topAppBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/black"
+                        app:title="@string/app_name"
+                        app:titleTextColor="@color/white"
+                        app:menu="@menu/top_app_bar"
+                        app:navigationIcon="@drawable/menu"
+                        style="@style/Widget.MaterialComponents.Toolbar.Primary"/>
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+           <!--
+           Контент экрана
+           android:layout_weight="1" стандартный вес для соотношения c FrameLayout
+           -->
+            <FrameLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+       <!-- CoordinatorLayout - Этот контейнер нужен для многих Баров в MD. В частности в TopAppBar-->
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <!--Собственно Bottom Navigation-->
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/black"
+                android:elevation="16dp"
+                app:itemIconTint="@color/color_bottom_navigation"
+                app:itemTextColor="@color/color_bottom_navigation"
+                app:menu="@menu/bottom_navigation"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

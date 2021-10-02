@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Главный контейнер-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Первая группа после Хидера - без названия
+    android:checkableBehavior="none"
+    single - переключатели (можно переключить только 1 элемент)
+    all - флажки (Можно отметить все элементы)-->
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/homeMenu"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/shopMenu"
+            android:icon="@drawable/settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/favoritesMenu"
+            android:icon="@drawable/favorites"
+            android:title="@string/favorites"/>
+        <item
+            android:id="@+id/accountMenu"
+            android:icon="@drawable/upload"
+            android:title="@string/upload" />
+        <item
+            android:id="@+id/contactMenu"
+            android:icon="@drawable/home"
+            android:title="@string/home"/>
+
+    </group>
+
+    <!--Итемы с названием-->
+    <item
+        android:title="@string/main">
+        <menu>
+            <item
+                android:id="@+id/videoMenu"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+            <item
+                android:id="@+id/locationMenu"
+                android:icon="@drawable/favorites"
+                android:title="@string/favorites"/>
+            <item
+                android:id="@+id/settingsMenu"
+                android:icon="@drawable/upload"
+                android:title="@string/upload"/>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/contacts">
+        <menu>
+            <item
+                android:id="@+id/helpMenu"
+                android:icon="@drawable/home"
+                android:title="@string/home"/>
+            <item
+                android:id="@+id/developerMenu"
+                android:icon="@drawable/settings"
+                android:title="@string/settings"/>
+
+            <item
+                android:id="@+id/aboutMenu"
+                android:icon="@drawable/favorites"
+                android:title="@string/favorites"/>
+
+        </menu>
+    </item>
+
+</menu>

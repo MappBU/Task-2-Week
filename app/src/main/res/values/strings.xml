@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MATERIAL</string>
+    <string name="favorites">FAVORITES</string>
+    <string name="settings">SETTINGS</string>
+    <string name="upload">UPLOAD</string>
+    <string name="home">HOME</string>
+    <string name="main">MAIN</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="version">2.1.1</string>
+    <string name="play">PLAY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
