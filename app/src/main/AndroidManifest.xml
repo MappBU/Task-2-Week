@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.topappbarwithdriwerlayiutmenu">
 
     <application
@@ -10,11 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TopAppBarWithDriwerLayiutMenu">
         <activity
-            android:name=".DetailsSheet"
-            android:exported="true" />
+            android:name=".Details"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".DialogMenuActivity"
-            android:exported="true" />
+            android:exported="true"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
